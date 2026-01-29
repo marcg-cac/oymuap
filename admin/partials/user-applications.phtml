@@ -1,0 +1,27 @@
+<?php
+require_once OYMUAP_PLUGIN_DIR . 'admin/classes/pages/user-applications-page.php';
+$applications_page = new Oym\Uap\Admin\Pages\User_Applications_Page();
+
+?>
+<div class="uap-page-container">
+    <div class="oym-page-nav-menu">
+        <div class="oym-page-nav-menu-item"><a href="<?php echo OYMUAP_RECENT_USER_APPLICATIONS_URL  ?>">Recent User Applications</a></div>
+    </div>
+    <div class="oym-page-main-menu-title">Applications</div>
+    <div class="uap-tablefilter-container">
+        <div class="uap-tablefilter-item">
+            <label class="uap-form-label" for="uap-application-year">Year</label>
+            <select name="uap-application-year" id="uap-application-year" class="cac-select-control">
+            <?php echo $applications_page->application_year->year_dropdown_html ?>
+            </select>
+        </div>
+        <div class="uap-tablefilter-item cacButton-small">
+            <button id="cac-search-applications-button" class="btn-default btn" name="cac-search-applications-button" type="submit">Search</button>
+        </div>
+    </div>
+
+    <div id="applications_table"></div>
+</div>
+<script type="text/javascript">var table_data = [] </script>
+<script type="text/javascript">var uap_user_id = <?php echo $applications_page->user_id ?> </script>
+

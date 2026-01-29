@@ -1,0 +1,112 @@
+
+.oymuap-application-download{
+	margin: auto;
+	width: 60%;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.oymuap-application-download a{
+	text-decoration: underline;
+}
+
+.uap-applications-portal-table{
+	margin: 0px 0px 0px 0px !important;
+}
+
+#uap-applications-status-row{
+	width: 100px !important;
+	min-width: 150px !important;
+}
+
+.uap-tablerow-text-small p{
+	font-size: 14px;
+}
+
+.oymuap-page-progress-container{
+	display:flex ;
+}
+
+@media screen and (max-width: 600px) {
+	.oymuap-page-progress-container {
+	  display: none;
+	}
+  }
+
+/* #region custom wpforms styles */
+
+.oymuap-wpforms-custom .wpforms-page-indicator{
+	margin-bottom: 3px !important;
+}
+
+.oymuap-wpforms-custom .wpforms-container{
+	margin: 0px 0px 0px 0px !important;
+}
+
+.oymuap-wpforms-custom .wpforms-field-html{
+	padding-top: 3px !important;
+	padding-bottom: 3px !important;
+}
+
+.oymuap-wpforms-custom .wpforms-field-divider{
+	margin-top: 3px !important;
+}
+
+.oymuap-wpforms-custom .wpforms-field-divider h3{
+	margin-top: 6px !important;
+	margin-bottom: 3px !important;
+	padding-top: 3px !important;
+}
+
+
+
+/* #endregion */
+
+/* #region custom wpforms smartcode styles */
+
+.oymuap-progress-container {
+	max-width: fit-content !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.oymuap-progress-container .title{
+	margin: 0px 0px 0px 0px;
+	padding-top: -2px;
+	font-size: 24px;
+	text-align: center;
+}
+
+
+/* #endregion */
+
+/* #region */
+.uap-tablefilter-container {
+	min-width: 400px;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: normal;
+	align-items: normal;
+	align-content: stretch;
+}
+
+
+.uap-form-label{
+	margin: 10px 10px 10px 10px;
+	font-size: 16px;
+}
+
+.uap-form input{
+	margin: 2px 10px 2px 10px;
+}
+
+
+.uap-tablefilter-item {
+    padding: 0px 4px 0px 4px;
+}
+
+/* #endregion */

@@ -1,0 +1,14 @@
+<?php
+require_once OYMUAP_PLUGIN_DIR . 'admin/classes/pages/recent-user-applications-page.php';
+$recent_user_applications_page = new Oym\Uap\Admin\Pages\Recent_User_Applications_Page();
+
+?>
+
+<div class="uap-page-container">
+    <div class="oym-page-main-menu-title">Recent User Applications</div>
+    <?php echo $recent_user_applications_page->user_applications_filter_html ?>
+
+<div id="user-applications-table"></div>
+</div>
+<script type="text/javascript">var table_data = [] </script>
+

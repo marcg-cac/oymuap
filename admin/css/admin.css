@@ -1,0 +1,88 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+
+/* #region */
+.uap-page-container {
+	margin: 20px 10px 10px 10px;
+}
+
+.uap-tablefilter-container {
+	min-width: 400px;
+	margin: 10px 10px 10px 10px;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: normal;
+	align-items: normal;
+	align-content: stretch;
+}
+
+
+.uap-form-label{
+	margin: 10px 10px 10px 10px;
+	font-size: 16px;
+}
+
+.uap-form input{
+	margin: 2px 10px 2px 10px;
+}
+
+
+.uap-tablefilter-item {
+    padding: 0px 4px 0px 4px;
+}
+
+.section-contract {
+	cursor: pointer;
+}
+
+.section-expand {
+	cursor: pointer;
+}
+
+.oymuap-radio-button-row input {
+	margin: 0px 15px 0px 15px;
+}
+
+.oymuap-radio-button-row label {
+	margin: 0px 15px 0px 15px;
+}
+
+/*
+
+.cac-uap-userfilter-button-container {
+	margin: 2px 10px 2px 10px;
+	padding: 5px 0px 10px 0px;
+	position: relative;
+}
+
+.cac-uap-search-items{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.oym-flex-column{
+	display: flex;
+	flex-direction: column;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.oym-flex-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+*/
+/* #endregion */
+
+
+
+

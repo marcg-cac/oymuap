@@ -1,0 +1,71 @@
+<?php
+require_once OYMUAP_PLUGIN_DIR . 'admin/classes/pages/user-application-page.php';
+$user_application_page = new Oym\Uap\Admin\Pages\User_Application_Page();
+$user_application_page->run();
+$user_application = $user_application_page->user_application_manager->user_application;
+?>
+<div class="uap-page-container">
+    <div class="oym-page-nav-menu">
+        <div class="oym-page-nav-menu-item"><a href="<?php echo OYMUAP_RECENT_USER_APPLICATIONS_URL  ?>">Recent User Applications</a></div>
+        <div class="oym-page-nav-menu-item">
+            <a href="<?php echo OYMUAP_USER_APPLICATIONS_URL . "&user_id=" . $user_application->hoh_obj->ID  ?> "> <?php echo $user_application->hoh_obj->name  ?> Applications</a>
+        </div>
+        <div class="oym-page-nav-menu-item">
+            <a href="<?php echo OYMUAP_USER_APPLICATION_PDF_URL . "&user_application_guid=" . $user_application_page->user_application_guid  ?> " target="_new">Application PDF</a>
+        </div>
+    </div>
+    <div class="oym-page-main-menu-title">Application</div>
+
+
+    <div class="oym-section-label">APPLICATION INFORMATION</div>
+    <div id="uap-application-section" class="oym-section">
+        <div class="oym-table">
+            <div class="oym-table-body">
+                <div class="oym-table-row">
+                    <div class="oym-table-menu-label">Name</div>
+                    <div class="oym-table-cell"><?php echo $user_application->hoh_obj->name ?></div>
+                    <div class="oym-table-menu-label">Application Date</div>
+                    <div class="oym-table-cell"><?php echo $user_application->application_date ?></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="oym-table">
+            <div class="oym-table-body">
+                <div class="oym-table-row">
+                    <div class="oym-table-menu-label">Home Address</div>
+                    <div class="oym-table-menu-label">Mailing Address</div>
+                </div>
+                <div class="oym-table-row">
+                    <div class="oym-table-cell">
+                        <?php echo $user_application->home_address ?>
+                    </div>
+                    <div class="oym-table-cell">
+                        <?php echo $user_application->mailing_address ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="oym-table">
+            <div class="oym-table-body">
+            <div class="oym-table-menu-label">Programs</div>
+                <div class="oym-table-row">
+                    <?php echo $user_application_page->programs_html ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <BR>
+    <?php echo $user_application_page->build_user_info_section(); ?>
+    <br>
+    <?php echo $user_application_page->build_housing_section_content(); ?>
+    <br>
+    <?php echo $user_application_page->build_energy_section_content(); ?>
+
+
+
+</div>
+
+

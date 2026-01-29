@@ -1,0 +1,11 @@
+<?php
+$user_application_pdf = new User_Application_Pdf();
+$user_application_pdf->create_pdf();
+
+?>
+<div class="uap-page-container">
+<?php echo $user_application_pdf->page_message ?>
+
+</div>
+
+

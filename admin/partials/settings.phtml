@@ -1,0 +1,14 @@
+<?php
+require_once OYMUAP_PLUGIN_DIR . 'admin/classes/pages/uap-settings-page.php'; // no dependencies
+ if (! current_user_can( 'oymuap_view_settings' ) ) {
+    echo "You do not have sufficient permissions to view this page.";
+    return;
+ }
+$settings_page = new Oym\Uap\Admin\Pages\Settings_Page();
+
+$settings_page->settings_display();
+?>
+ 
+
+
+
